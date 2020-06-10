@@ -406,3 +406,13 @@ body{
     font:normal 12px /24px "Microsoft Yahei";
     text-align:center;
 }
+
+.center_con02 .event{
+    color: white;
+    text-align:center;
+    width: 200px;
+    height: 40px;
+    background-color: #f26f6f;
+    position: absolute;
+    left: 45%;
+}
