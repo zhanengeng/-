@@ -160,8 +160,8 @@ section span{
 /*--------------------------------
   section-WORKS
 ---------------------------------*/
-#works span{
-    font-weight: 400; 
+#works .card{
+	margin-bottom: 10px;
 }
 
 
