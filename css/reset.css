@@ -1,48 +1,102 @@
-/* 将标签默认的间距设为0   */
-body,p,h1,h2,h3,h4,h5,h6,ul,dl,dt,form,input{
-	margin:0;
-	padding:0;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
-/*  去掉默认的小圆点   */
-ul{
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
     list-style:none;
 }
 
-/* 去掉默认的下划线   */
-a{
-	text-decoration:none;
+blockquote, q {
+    quotes:none;
 }
 
-/* 设置不倾斜   */
-em{
-	font-style:normal;
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
 }
 
-/*  去掉在IE下图片做链接时生成的边框  */
-img{
-	border:0px;
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-/* 让h标签继承body中的字体大小的设置   */
-h1,h2,h3,h4,h5,h6{
-	font-size:100%;
-}
-/* 清除浮动、解决margin-top塌陷   */
-.clearfix:before,.clearfix:after{
-	content:"";
-	display:table;
-}
-.clearfix:after{
-	clear:both;
-}
-.clearfix{
-	zoom:1;
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
 
-
-.fl{
-	float:left;
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
 }
-.fr{
-	float:right;
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
 }

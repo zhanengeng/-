@@ -1,143 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome CSS -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+    <!-- Custom CSS for this template -->
     <link rel="stylesheet" href="css/reset.css">
-    <title>天天生鲜-首页</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slide2.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <!-- 页面顶部 -->
-    <div class="header_con">
-        <div class="header">
-            <div class="welcome fl">Welcome</div>
-            <div class="user_con fr">
-                <ul class="login_btns fl">
-                    <li><a href="#">新規登録</a></li>
-                    <li><span>|</span></li>
-                    <li><a href="#">ログイン</a></li>
-                </ul>
+    <!-- ヘッダー -->
+    <!-- bootstrapのJumbotron使用 -->
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container">
+            <h1 class="display-3">Zwg's Portfolio</h1>
+        </div>
+    </div>
+    <!-- グローバルナビ -->
+    <nav id="gnav" class="sticky-top"> 
+    <!-- stiky-top:ナビバーを上部に固定 -->
+        <ul>
+            <li><i class="far fa-user"></i><a href="#profile">PROFILE</a></li>
+            <li><i class="far fa-lightbulb"></i><a href="#skill">SKILL</a></li>
+            <li><i class="fas fa-tasks"></i><a href="#works">WORKS</a></li>
+            <li><i class="far fa-envelope"></i><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-                <div class="user_info fl">
-                    欢迎您：<em>用户1</em>
+    <section>
+        <!-- PROFILE -->
+        <div id="profile" class="container">
+            <div class="row justify-content-center title">
+                <i class="far fa-user"><span>PROFILE</span></i>
+            </div>
+            <div class="row cont">
+                <div class="col-lg-6 col-mg-12 text-center photo">
+                    <img class="" src="/img/" alt="顔写真">
                 </div>
+                <div class="col-lg-6 col-mg-12">
+                    <div class="details">
+                    <ul class="lead">
+                        <li>名前：張文コン</li>
+                        <li>出身：中国 大連市</li>
+                        <li>学歴：九州大学大学院 工学府 卒</li>
+                        <li>職歴：大手化学メーカにて４年間勤務</li>
+                        <li>IT暦：2019年12月からプログラミング独学し始め、最初にprogate,udemyを利用し基礎を学び、2020年2月から中国語のオンラインスクールでpythonを学びました。</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <ul class="user_btns fl">
-                    <li><span>|</span></li>
-                    <li><a href="#">カート</a></li>
-                    <li><span>|</span></li>
-                    <li><a href="#">マイページ</a></li>
+
+        <!-- SKILL -->
+        <!-- 以下はjQuery使用し、ナビゲーション効果を実現 -->
+        <div id="skill" class="container">
+            <!-- タイトル -->
+            <div class="row justify-content-center title">
+                <i class="far fa-lightbulb"><span>SKILL</span></i>
+            </div>
+            <!-- ボタン設置 -->
+            <div class="row justify-content-center">
+                <div class="navBtns">
+                    <button type="button" class="btn btn-link">フロントエンド</button>
+                    <button type="button" class="btn btn-link">バックエンド</button>
+                    <button type="button" class="btn btn-link">データベース</button>
+                </div>
+            </div>
+            <!-- スライド設置 -->
+            <div class="row justify-content-center">
+                <div class="cons">
+                    <div class="slides">
+                        <div>
+                            <h2>フロントエンド</h2>
+                            <br/>
+                            <p>HTML＋CSS＋Jsを使い、簡単な動的webページを作成できる。</p>
+                            <br/>
+                            <p>フレームワーク：jQueryとBootstrapがメイン。</p>
+                            
+                        </div>
+                        <div>
+                            <h2>バックエンド</h2>
+                            <br/>
+                            <p>pythonを使いこなし、paizaランキングAをクリアした。</p>
+                            <br/>
+                            <p>フレームワーク：django。</p>
+                            <br/>
+                            <br/>
+                            <p>2020年6月からJavaを勉強し始めた。</p>
+                        </div>
+                        <div>
+                            <h2>データベース</h2>
+                            <br/>
+                            <p>MySQLがメイン。</p>
+                            <br/>
+                            <p>Mongodb＆redisを触れたことがある。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WORKS -->
+        <div id="works" class="container">
+            <div class="row justify-content-center title">
+                <i class="fas fa-tasks"><span>SKILL</span></i>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="card col-lg-3 col-md-3 col-sm-12">
+                    <a href=""><img class="card-img-top" src="..." alt="Card image cap"></a>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact" class="container text-center">
+            <div class="row justify-content-center title">
+                <i class="far fa-envelope"><span>CONTACT</span></i>
+            </div>
+            <div class="contact-icon">
+                <ul>
+                    <li><a href="https://github.com/zhanengeng"><i class="fab fa-github faa-shake fa-2x animated-hover"></i></a></li>
+                    <!-- <li><a href="#"><i class="far fa-envelope faa-shake fa-2x animated-hover"></i></a></li> -->
+                    <!-- <li><a href="#"><i class="fab fa-twitter faa-shake fa-2x animated-hover"></i></a></li> -->
                 </ul>
             </div>
         </div>
-    </div>
 
-    <!-- logo，搜索框，购物车 -->
-    <div class="center_con">
-        <a href="index.html" class="logo fl"><img src="images/logo.png" alt="天天生鲜网站logo"></a>
-        <div class="search_con fl">
-            <form>
-                <input type="text" class="input_txt fl" placeholder="搜索">
-                <input type="submit" class="input_sub fl" value="搜索">
-            </form>
-        </div>
-        <div class="chart_con fr">
-            <a href="#" class="chart_link fl">カート</a>
-            <div class="chart_num fl">0</div>
-        </div>
-    </div>
-
-    <!-- 主菜单 -->
-    <div class="main_menu_con">
-        <div class="center_con02">
-            <h2>商品分類</h2>
-            <!-- <a href="http://www.baidu.com" class="event"> Event Page </a> -->
-        </div>
-    </div>
-
-
-    <div class="center_con03">
-        <div class="sub_menu_con fl">
+    <footer id="footer">
+        <div class="inner">
+            <nav class="footer-link">
             <ul>
-                <li><a href="" class="icon01">果物</a></li>
-                <li><a href="" class="icon02">水産</a></li>
-                <li><a href="" class="icon03">お肉</a></li>
-                <li><a href="" class="icon04">卵</a></li>
-                <li><a href="" class="icon05">野菜</a></li>
-                <li><a href="" class="icon06">冷凍食品</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
-
-
+            </nav>
+            <p class="copyright text-center">Copyright&copy;Wengeng Zhang. All Rights Reserved.</p>
         </div>
-        <div class="slide_con fl">
-            <ul class="slide">
-                <li><a href="javascript:;"><img src="images/slide.jpg" alt="幻灯片1"></a></li>
-                <li><a href="javascript:;"><img src="images/slide02.jpg" alt="幻灯片2"></a></li>
-                <li><a href="javascript:;"><img src="images/slide03.jpg" alt="幻灯片3"></a></li>
-                <li><a href="javascript:;"><img src="images/slide04.jpg" alt="幻灯片4"></a></li>
-            </ul>
+    </footer>
 
-            <!-- スライド矢印 -->
-            <div class="prev"></div>
-            <div class="next"></div>
+    </section>
 
-            <!-- スライドポイント、Jsで動的実現-->
-            <ul class="points">
-                <!-- <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li> -->
-            </ul>
-        </div>
-        <div class="advs fl">
-            <a href=""><img src="images/adv01.jpg" alt="广告图片1"></a>
-            <a href=""><img src="images/adv02.jpg" alt="广告图片2"></a>
-        </div>
-    </div>
+    
+    
 
-    <div class="common_model">
-        <div class="common_title_con">
-            <h3>果物</h3>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-            <a href="" class="more fr">more &gt;</a>
-        </div>
-
-        <div class="goods_banner fl">
-            <a href=""><img src="images/banner01.jpg" alt="banner"></a>
-        </div>
-        <ul class="goods_list fl">
-            <li>
-                <h4>いちご</h4>
-                <a href=""><img src="images/goods/goods003.jpg" alt="商品图片"></a>
-                <div class="price">￥ 30.00</div>
-            </li>
-            <li>
-                <h4>グレープ</h4>
-                <a href=""><img src="images/goods/goods002.jpg" alt="商品图片"></a>
-                <div class="price">￥ 5.00</div>
-            </li>
-            <li>
-                <h4>レモン</h4>
-                <a href=""><img src="images/goods/goods001.jpg" alt="商品图片"></a>
-                <div class="price">￥ 4.00</div>
-            </li>
-            <li>
-                <h4>キュウイ</h4>
-                <a href=""><img src="images/goods/goods012.jpg" alt="商品图片"></a>
-                <div class="price">￥ 25.00</div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        <p>CopyRight © 2020 天天生鲜项目 All Rights Reserved</p>
-        <p>电话：***-*******　</p>
-    </div>
+    <!-- Custom scripts for this template -->
+    <script type="text/javascript" src="js/myscript.js"></script>
 </body>
 
 </html>
