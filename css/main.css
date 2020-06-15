@@ -82,8 +82,8 @@ section span{
 
 #profile img{
     border-radius:50%;
-    /* height: 50%; */
-    padding: 30px;
+    height: 80%;
+    padding: 10px;
     border: 1px solid #000;
 }
 
@@ -131,7 +131,7 @@ section span{
     top: 0;
 }
 
-.slides div {
+.slide {
     width: 500px;
     height: 300px;
     /* display: block; */
@@ -141,11 +141,21 @@ section span{
     padding:20px;
 }
 
-.slides h2{
+.slide h2{
     font-size:20px;
 }
 
+.slide .con{
+	height: 230px;
+    display: flex;
+	flex-direction: column;
+	/* border: 1px solid #000; */
+	justify-content: center;
+}
 
+.slide p{
+	margin-bottom:15px;
+}
 
 /*--------------------------------
   section-WORKS
