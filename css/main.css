@@ -101,15 +101,15 @@ section span{
   section-SKILL ナビゲーション
 ---------------------------------*/
 /* ボタン設定 */
-.navBtns button {
+#skill button {
     color: rgba(0,0,0,.5);
 }
 
-.navBtns button:hover {
+#skill button:hover {
     color: black;
 }
 
-.navBtns .current{
+#skill .current{
     color: black;
     font-weight: bold;
 }
