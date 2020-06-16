@@ -116,7 +116,7 @@ section span{
 
 /* スライド設定 */
 .cons {
-    width: 500px;
+    width: 375px;
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -124,7 +124,7 @@ section span{
 }
 
 .slides {
-    width: 1510px;
+    width: 1200px;
     height: 300px;
     position: absolute;
     left: 0;
@@ -132,13 +132,13 @@ section span{
 }
 
 .slide {
-    width: 500px;
+    width: 375px;
     height: 300px;
-    /* display: block; */
     text-align: center;
     font-size: 15px;
     float: left;
     padding:20px;
+    /* border: 1px solid gold; */
 }
 
 .slide h2{
@@ -154,7 +154,8 @@ section span{
 }
 
 .slide p{
-	margin-bottom:15px;
+  margin-bottom:15px;
+  line-height: 20px;
 }
 
 /*--------------------------------
