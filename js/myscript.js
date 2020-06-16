@@ -1,5 +1,5 @@
 $(function () {
-    let $btn = $(".navBtns button");
+    let $btn = $("#skill button");
     let $slides = $(".cons .slides");
 
     $btn.click(function () {
